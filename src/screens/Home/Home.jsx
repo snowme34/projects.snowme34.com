@@ -96,9 +96,11 @@ export default class App extends Component {
 				</div>
 				<footer className={styles.footerDiv}>
 					<div>
-						{/* Avi's <a href="https://aviaryan.in/downloads/resume.pdf#zoom=125" target="_blank">resume</a> */}
-						{/* <span className={styles.horizSpace}>&middot;</span> */}
-						Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" target="_blank">Dave Gandy</a>
+						Template by <a href="https://github.com/aviaryan/work" target="_blank">Avi Aryan</a>
+						<span className={styles.horizSpace}>&middot;</span>
+						Edited by <a href="https://github.com/snowme34/projects.snowme34.com">snowme34</a>
+						<span className={styles.horizSpace}>&middot;</span>
+						Icons by <a href="https://www.flaticon.com/authors/dave-gandy" target="_blank">Dave Gandy</a>
 					</div>
 				</footer>
 			</div>
