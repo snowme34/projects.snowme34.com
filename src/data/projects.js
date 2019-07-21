@@ -92,7 +92,6 @@ let projects = [
 			'(no public code since school project, link to presentation)'
 		],
 		date: '2019/04-2019/06',
-		github: 'https://github.com/snowme34/',
 		weight: 1,
 		websites: ['https://docs.google.com/presentation/d/1sgU10KNQS97KWu0Uks9_d9w5As4TkLed6jUJ2t6-CHU/edit?usp=sharing'],
 		tags: [
@@ -119,7 +118,7 @@ let projects = [
 	},
   {
 		id: 'undecidable-task-data-mining-assignment-10',
-		name: 'Undecidable Task Data Mining Assignment 10',
+		name: 'Undecidable Task',
 		desc: [
 			'A prediction task as a final project for a data mining class',
 			'Good use of Python libraries: Scikit-learn and Keras',
