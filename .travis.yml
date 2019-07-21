@@ -10,6 +10,8 @@ before_install:
   - export PATH=$HOME/.yarn/bin:$PATH
 install:
   #- rm -rf ./node_modules
+  - nvm install node
+  - npm --version
   - yarn --version
   - yarn install
 script:
