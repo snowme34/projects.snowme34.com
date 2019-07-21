@@ -1,12 +1,17 @@
 import projects from '../data/projects'
 
+
 export default {
+	// https://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
+	escapeRegExp: (string) => {
+		string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+	},
 	/*
 	 * searchProjects filters the projects
 	 */
 	filterProjects: (projects, query) => {
 		let p = [];
-		query = query.toLowerCase(); // lower case better searching
+		query = escapeRegRex(query.toLowerCase()); // lower case better searching
 		let qrArr = query.split(' ');
 		let fail = false;
 		for (let i of projects) {
