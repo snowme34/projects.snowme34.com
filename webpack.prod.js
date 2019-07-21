@@ -40,26 +40,6 @@ module.exports = {
 	plugins: [
 		// extract text
 		new ExtractTextPlugin("styles.css"),
-		// minify
-		new webpack.optimize.UglifyJsPlugin({
-			mangle: true,
-			compress: {
-				warnings: false, // Suppress uglification warnings
-				pure_getters: true,
-				unsafe: true,
-				unsafe_comps: true,
-				screw_ie8: true,
-				conditionals: true,
-				unused: true,
-				comparisons: true,
-				sequences: true,
-				dead_code: true,
-				evaluate: true,
-				if_return: true,
-				join_vars: true
-			},
-			comments: false
-		}),
 		// vendor: https://webpack.github.io/docs/code-splitting.html#split-app-and-vendor-code
 		// new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
 		// no need for vendor optimization as it is very small
