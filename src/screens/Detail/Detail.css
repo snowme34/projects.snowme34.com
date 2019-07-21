@@ -49,6 +49,8 @@
 
 .tags {
 	margin-top: 1.5rem;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 

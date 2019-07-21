@@ -1,5 +1,6 @@
 /*
  * Thanks to geopattern for the colors
+ * And nipponcolors.com
  */
 export default [
 	{
@@ -26,6 +27,22 @@ export default [
 		name: 'dullviolet',
 		color: '#DCA4EB'
 	},
+	{
+		name: 'momo',
+		color: '#F596AA'
+	},
+	{
+		name: 'toki',
+		color: '#EEA9A9'
+	},
+	{
+		name: 'nadeshiko',
+		color: '#DC9FB4'
+	},
+	{
+		name: 'haizakura',
+		color: '#D7C4BB'
+	}
 	// {
 	// 	name: 'dullblue',
 	// 	color: '#A3CBEF'
