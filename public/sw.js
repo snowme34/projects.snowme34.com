@@ -1,6 +1,6 @@
 var filesToCache = [
 	'index.html',
-	'dist/bundle.js',
+	// 'dist/bundle.js',
 	'https://fonts.googleapis.com/css?family=Open+Sans:400,700',
 	'https://buttons.github.io/buttons.js',
 ];
@@ -8,7 +8,7 @@ var filesToCache = [
 // only work when deployed
 if (self.registration.scope.indexOf("localhost") < 0) {
 	filesToCache.push('dist/styles.css');
-	filesToCache.push('dist/vendor.bundle.js');
+	// filesToCache.push('dist/vendor.bundle.js');
 }
 
 const version = '1.0';
