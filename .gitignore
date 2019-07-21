@@ -1,10 +1,12 @@
+.vscode/
+
 node_modules/
 *bundle.js
 styles.css
 .DS_Store
 
 .idea/
-deploy/
+public/dist
 
 # local surge deploy
 CNAME
