@@ -23,6 +23,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  fqds: projects.snowme34.com
+  fqdn: projects.snowme34.com
   on:
     branch: master
