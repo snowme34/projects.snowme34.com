@@ -1,3 +1,3 @@
 export default {
-	title: 'projects | snowme34'
+	title: 'Projects | snowme34'
 }
