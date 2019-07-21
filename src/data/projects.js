@@ -32,8 +32,7 @@ let projects = [
 		weight: 2,
 		websites: ['https://snowme34.com'],
 		tags: [
-			'Blog', 'Technical Writing', 'DevOps', 'JavaScript',
-			'React', 'LNMP', 'docker', 'CI/CD', 'SEO', 'Readthedocs'
+			'Technical Writing', 'DevOps', 'CI/CD', 'SEO'
 		]
 	},
   {
