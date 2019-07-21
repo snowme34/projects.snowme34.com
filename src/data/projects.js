@@ -20,10 +20,25 @@ let projects = [
 	// 	]
 	// },
   {
+		id: 'docs.snowme34.com',
+		name: 'docs.snowme34.com',
+		desc: [
+			'Non-Subjective technical articles, including references for languages, algorithms, cli, DevOps, DB, networking, etc.',
+			'Updates almost daily. Focus on simplified but accurate explanations'
+		],
+		date: '2019/01-present',
+		github: 'https://github.com/snowme34/snowme34.com/tree/master/docs',
+		weight: 2,
+		websites: ['https://docs.snowme34.com'],
+		tags: [
+			'Technical Writing', 'DevOps', 'Algorithms', 'Data Structures', 'Langrage', 'SQL', 'Bash', 'unix', 'Scale', 'Networking'
+		]
+	},
+  {
 		id: 'snowme34.com',
 		name: 'snowme34.com',
 		desc: [
-			'Some code used to build snowme34.com',
+			'Code for the snowme34.com',
 			'Has multiple independent sites:',
 			'snowme34.com, blog.snowme34.com, docs.snowme34.com, projects.snowme34.com, contact.snowme34.com'
 		],
@@ -32,7 +47,7 @@ let projects = [
 		weight: 2,
 		websites: ['https://snowme34.com'],
 		tags: [
-			'Technical Writing', 'DevOps', 'CI/CD', 'SEO'
+			'DevOps', 'CI/CD', 'SEO', 'Blog', 'JavaScript', 'HTML', 'CSS'
 		]
 	},
   {
@@ -40,7 +55,7 @@ let projects = [
 		name: 'UCSD Schedule Planner',
 		desc: [
 			'A production-level web application helping students to schedule classes',
-			'Work as a team and is responsible for back-end, DevOps, SRE, CI/CD, QE'
+			'Work in a team and is responsible for back-end, DevOps, SRE, CI/CD, QA'
 		],
 		date: '2018/11-present',
 		github: 'https://github.com/ucsdscheduleplanner/',
@@ -49,23 +64,36 @@ let projects = [
 		websites: ['https://sdschedule.com/'],
 		tags: [
 		 'Python', 'Flask', 'Golang', 'MongoDB', 'Redis', 'PostgreSQL', 'Caching', 'DevOps',
-		 'Bash', 'Nginx', 'JMeter', 'SQL'
+		 'Bash', 'Nginx', 'JMeter', 'Stress Test', 'SQL', 'JavaScript'
+		]
+	},
+  {
+		id: 'personbest',
+		name: 'Person Best',
+		desc: [
+			'A fitness Android app, with Google API',
+			'Led 5 agile developers as PM. Ensured git workflow, code quality, and design patterns such as SRP, MVC',
+			'Mainly worked on Firebase integration, db design, and quality control'
+		],
+		date: '2019/01-2019/03',
+		github: 'https://github.com/UCSD-CSE-110-Winter-2019/Team-33-PersonBest',
+		weight: 1,
+		tags: [
+	   'Android', 'Java', 'Agile', 'Design Patterns', 'Database Design', 'Firebase', 'QA'
 		]
 	},
   {
 		id: 'microclimate-ioteam',
 		name: 'Microclimate IOTeam',
 		desc: [
-			'An IoT based Microclimate project, worked in pair',
-			'Used embedded C and Arduino for IoT device',
-			'Wrote Node.js-based backend with SOAP API to collect 100k+ data and monitor device/data health',
-			'Wrote bash script to deploy',
+			'An IoT based Microclimate group project',
+			'Used embedded C and Arduino for IoT device. Wrote Node.js-based backend with SOAP API to collect 100k+ data and monitor device/data health. Wrote bash script to deploy',
 			'Utilized Google charts and map APIs to visualize the data, helping students to decide which route to take to go across campus.',
 			'(no public code since school project, link to presentation)'
 		],
 		date: '2019/04-2019/06',
 		github: 'https://github.com/snowme34/',
-		weight: 0,
+		weight: 1,
 		websites: ['https://docs.google.com/presentation/d/1sgU10KNQS97KWu0Uks9_d9w5As4TkLed6jUJ2t6-CHU/edit?usp=sharing'],
 		tags: [
 	   'IoT', 'Embedded C', 'Node.js', 'JavaScript', 'Google Charts', 'Google Maps', 'Data Visualization', 'Data Analysis', 'SOAP', 'MySQL'
@@ -82,7 +110,7 @@ let projects = [
 		],
 		date: '2018/12-2019/01',
 		github: 'https://github.com/snowme34/tone-the-ear',
-		weight: -1,
+		weight: 0,
 		websites: ['https://demo-tone-the-ear.snowme34.com'],
 		tags: [
 			'JavaScript', 'React', 'Tensorflow.js',
@@ -93,9 +121,9 @@ let projects = [
 		id: 'undecidable-task-data-mining-assignment-10',
 		name: 'Undecidable Task Data Mining Assignment 10',
 		desc: [
-			'10 is in binary',
 			'A prediction task as a final project for a data mining class',
-			'Good use of Python libraries: Scikit-learn and Keras'
+			'Good use of Python libraries: Scikit-learn and Keras',
+			'10 is in binary',
 		],
 		date: '2018/12',
 		github: 'https://github.com/snowme34/undecidable-task-data-mining-assignment-10',
@@ -109,7 +137,7 @@ let projects = [
 		id: 'hexo-theme-symphony',
 		name: 'Hexo Theme Symphony',
 		desc: [
-			'A neat Hexo theme symphony without any unnecessary animations',
+			'A neat Hexo theme symphony without unnecessary animations',
 			'The theme used by blog.snowme34.com',
 			'(Hexo is a Node.js-powered blog framework)'
 		],
@@ -138,7 +166,7 @@ let projects = [
 		id: 'cuddly-programs',
 		name: 'Cuddly Programs',
 		desc: [
-			'Some one-file program written as either practice or short script or for fun',
+			'Some one-file program written for either practice or batching or fun',
 			'Majority of code written when first studying programming'
 		],
 		date: '2017/12-present', // 2345-present
@@ -152,12 +180,12 @@ let projects = [
 		id: 'a-hackathon-2019',
 		name: 'A Hackathon 2019',
 		desc: [
-			'A hackathon project, in Python Flask and ReactJS.',
+			'A hackathon project (unfinished), in Python Flask and ReactJS.',
 			'A platform for pairing up (recommendation system) users based on skills',
-			'Led 4-people team, with 3 first-time participants'
+			'Led 4-people team for an "all-inclusive" hackathon, with 3 first-time participants'
 		],
 		date: '2019/04',
-		weight: 0,
+		weight: -2,
 		tags: [
 	   'CS For All', 'Hackathon', 'Python', 'Flask', 'React', 'All-inclusive CS', 'Database Design'
 		]
@@ -166,10 +194,10 @@ let projects = [
 		id: 'everyday-writing',
 		name: 'Everyday Writing',
 		desc: [
-			'The codes I write when studying'
+			'Learning coding'
 		],
 		date: '2017-present',
-		github: 'https://github.com/snowme34/coursera-machine-learning-hw',
+		github: 'https://github.com/snowme34/everyday-writing',
 		weight: -3,
 		tags: [
 	   'Beginner', 'C++', 'Learning', 'Java', 'Golang', 'Python', 'Naive', 'Practice'
@@ -196,9 +224,9 @@ let projects = [
 		],
 		date: '2019/04',
 		github: 'https://github.com/snowme34/cppstd-rbtree-root-header-relationship',
-		weight: 0,
+		weight: -1,
 		tags: [
-	   'C++ STD', 'C++', 'Learning', 'Fun', 'GNU', 'Algorithm', 'Data Structure'
+	   'C++STD', 'C++', 'Learning', 'Fun', 'GNU', 'Algorithm', 'Data Structure'
 		]
 	},
   {
@@ -232,8 +260,8 @@ let projects = [
 		id: 'ownticket',
 		name: 'OwnTicket',
 		desc: [
-			'A ticket system based on face recognition and blockchain technology',
-			'White-paper only'
+			'A ticket system based on face recognition and blockchain technology (White-paper only)',
+			'Presented in Beijing'
 		],
 		date: '2018/04',
 		github: 'https://github.com/snowme34/Ownticket',

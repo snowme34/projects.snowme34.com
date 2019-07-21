@@ -86,6 +86,7 @@ export default class ProjectDetail extends Component {
 				}
 
 				<div className={styles.links}>
+					<div style={{fontSize: '2rem'}}>{project.date}</div>
 					{project.github &&
 					<div>GitHub: <a href={project.github} target="_blank">{gh}</a></div>}
 					{websitesDOM}
