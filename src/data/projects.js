@@ -3,578 +3,260 @@
  */
 
 let projects = [
-	{
-		id: 'clipjump',
-		name: 'Clipjump',
+	// template
+  // {
+	// 	id: '',
+	// 	name: '',
+	// 	desc: [
+	// 		'A thing'
+	// 	],
+	// 	date: '2018/12-2019/01', // 2345-present
+	// 	github: 'https://github.com/snowme34/',
+	// 	// githubRepo: '',
+	// 	weight: 0,
+	// 	websites: [''],
+	// 	tags: [
+	//    'C++', 'GNU'
+	// 	]
+	// },
+  {
+		id: 'snowme34.com',
+		name: 'snowme34.com',
 		desc: [
-			'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-			'It supports extension via plugins, has configurable hotkeys and enables users to write scripts via a feature known as Clipjump Custom.'
+			'Some code used to build snowme34.com',
+			'Has multiple independent sites:',
+			'snowme34.com, blog.snowme34.com, docs.snowme34.com, projects.snowme34.com, contact.snowme34.com'
 		],
-		date: '2013-16',
-		github: 'https://github.com/aviaryan/Clipjump',
+		date: '2017/12-present',
+		github: 'https://github.com/snowme34/snowme34.com',
 		weight: 2,
-		websites: ['http://clipjump.sourceforge.net'],
-		tags: ['autohotkey', 'clipboard']
+		websites: ['https://snowme34.com'],
+		tags: [
+			'Blog', 'Technical Writing', 'DevOps', 'JavaScript',
+			'React', 'LNMP', 'docker', 'CI/CD', 'SEO', 'Readthedocs'
+		]
 	},
-	{
-		id: 'shach',
-		name: 'Shach',
-		desc: ['Shach is a compiler written in Yacc/Lex that converts a common language to Bash and Batch.'],
-		github: 'https://github.com/aviaryan/shach/blob/master/REPORT.md',
-		date: '2017',
-		tags: ['compiler', 'cpp']
-	},
-	{
-		id: 'su4ahk',
-		name: 'Sublime 4 AutoHotkey',
+  {
+		id: 'ucsdscheduleplanner',
+		name: 'UCSD Schedule Planner',
 		desc: [
-			'A Sublime Text addon to do AutoHotkey coding in the editor. Provides much more than a Sublime Text package.'],
-		github: 'https://github.com/aviaryan/Sublime4Autohotkey',
-		date: '2013-14',
-		tags: ['autohotkey', 'sublime-text']
+			'A production-level web application helping students to schedule classes',
+			'Work as a team and is responsible for back-end, DevOps, SRE, CI/CD, QE'
+		],
+		date: '2018/11-present',
+		github: 'https://github.com/ucsdscheduleplanner/',
+		githubRepo: 'https://github.com/ucsdscheduleplanner/UCSD-Schedule-Planner',
+		weight: 5,
+		websites: ['https://sdschedule.com/'],
+		tags: [
+		 'Python', 'Flask', 'Golang', 'MongoDB', 'Redis', 'PostgreSQL', 'Caching', 'DevOps',
+		 'Bash', 'Nginx', 'JMeter', 'SQL'
+		]
 	},
-	{
-		id: 'hinix',
-		name: 'Hinix',
+  {
+		id: 'microclimate-ioteam',
+		name: 'Microclimate IOTeam',
 		desc: [
-			'Android game based on the popular classic Boggle. Distributed on Play Store with 4.5+ rating.',
-			'Champion Hackathon project.'],
-		date: '2016',
-		github: 'https://github.com/aviaryan/Hinix',
-		tags: ['android', 'java', 'game'],
-		weight: 1,
-		websites: ['https://play.google.com/store/apps/details?id=in.aviaryan.hinix']
+			'An IoT based Microclimate project, worked in pair',
+			'Used embedded C and Arduino for IoT device',
+			'Wrote Node.js-based backend with SOAP API to collect 100k+ data and monitor device/data health',
+			'Wrote bash script to deploy',
+			'Utilized Google charts and map APIs to visualize the data, helping students to decide which route to take to go across campus.',
+			'(no public code since school project, link to presentation)'
+		],
+		date: '2019/04-2019/06',
+		github: 'https://github.com/snowme34/',
+		weight: 0,
+		websites: ['https://docs.google.com/presentation/d/1sgU10KNQS97KWu0Uks9_d9w5As4TkLed6jUJ2t6-CHU/edit?usp=sharing'],
+		tags: [
+	   'IoT', 'Embedded C', 'Node.js', 'JavaScript', 'Google Charts', 'Google Maps', 'Data Visualization', 'Data Analysis', 'SOAP', 'MySQL'
+		]
 	},
 	{
-		id: 'cfbuddy',
-		name: 'CF Buddy',
-		date: '2017',
-		desc: ['App that uses CodeForces API to show programming problems, user profiles, blog posts and contests.'],
-		tags: ['android', 'java', 'codeforces'],
-		github: 'https://github.com/aviaryan/CFBuddy'
-	},
-	{
-		id: 'anyaudio',
-		name: 'AnyAudio',
-		desc: ['AnyAudio is an audio-streaming service that uses YouTube as the source. Written in Flask.'],
-		date: '2016-present',
-		tags: ['flask', 'backend', 'python'],
-		github: 'https://github.com/anyaudio',
-		githubRepo: 'https://github.com/anyaudio/anyaudio-server',
-		websites: ['http://anyaudio.in']
-	},
-	{
-		id: 'pop-patna',
-		name: 'Popular Places in Patna',
-		desc: ['A modern web-app showing popular places to visit in Patna using Google Maps and Foursquare data.'],
-		date: '2017',
-		tags: ['webpack', 'webapp', 'javascript'],
-		github: 'https://github.com/aviaryan/pop-places-patna',
-		websites: ['http://aviaryan.in/pop-places-patna/']
-	},
-	{
-		id: 'typ3r',
-		name: 'tYp3r',
-		desc: ['dA aNn0Y1Ng t3Xt g3NeRa7or (The annoying text generator :-P)'],
-		date: '2017',
-		tags: ['webapp'],
-		github: 'https://github.com/aviaryan/tYp3r',
-		websites: ['http://typ3r.aavi.me']
-	},
-	{
-		id: 'typ3rjs',
-		name: 'typ3r.js',
-		date: '2017',
-		desc: ['JavaScript library to convert sane human readable text to a not s0 hUMaN Re@dAbLE t3xT. No external dependencies.'],
-		tags: ['javascript', 'npm'],
-		github: 'https://github.com/aviaryan/typ3r.js'
-	},
-	{
-		id: 'bigeval',
-		name: 'BigEval.js',
-		date: '2015-16',
-		weight: 1,
-		desc: ['JavaScript library to evaluate mathematical expressions from strings. Supports all advanced mathematics expressions.'],
-		tags: ['javascript', 'npm'],
-		github: 'https://github.com/aviaryan/BigEval.js'
-	},
-	{
-		id: 'algos',
-		name: 'Algos',
-		date: '2017-present',
-		desc: ['Implementation of popular algorithms and data structures in popular languages. Lead maintainer of the project.'],
-		tags: ['algorithm', 'data-structures'],
+		id: 'tone-the-ear',
+		name: 'Tone the Ear',
+		desc: [
+			'An interactive progressive web app about ear training',
+			'Has 3 individual pages with comprehensive, captivating, and constructive coaching:',
+			'Piano, Perfect Pitch, and Tensorflow.js assisted Transcription.',
+			'An ungainly and ludicrous front-end attempt'
+		],
+		date: '2018/12-2019/01',
+		github: 'https://github.com/snowme34/tone-the-ear',
 		weight: -1,
-		github: 'https://github.com/iiitv/algos'
+		websites: ['https://demo-tone-the-ear.snowme34.com'],
+		tags: [
+			'JavaScript', 'React', 'Tensorflow.js',
+			'Firebase', 'Material-UI'
+		]
 	},
-	{
-		id: 'resume',
-		name: 'Resume',
-		date: '2016',
-		desc: ['Pseudo dynamic resume template created in Jekyll. Change YAML files to update resume.'],
-		tags: ['jekyll', 'website'],
-		github: 'https://github.com/aviaryan/resume',
-		websites: ['http://aviaryan.in/resume/']
+  {
+		id: 'undecidable-task-data-mining-assignment-10',
+		name: 'Undecidable Task Data Mining Assignment 10',
+		desc: [
+			'10 is in binary',
+			'A prediction task as a final project for a data mining class',
+			'Good use of Python libraries: Scikit-learn and Keras'
+		],
+		date: '2018/12',
+		github: 'https://github.com/snowme34/undecidable-task-data-mining-assignment-10',
+		weight: 0,
+		tags: [
+		 'Data Mining', 'Python', 'Jupyter Notebook', 'Numpy', 'Pandas', 'Keras', 'Sklearn', 'SVM',
+		 'Logistics Regression', 'PCA'
+		]
 	},
-	{
-		id: 'ahkst',
-		name: 'AHK package Sublime',
-		date: '2014',
-		desc: ['AutoHotkey package for Sublime Text. Now discontinued in favor of the community package.'],
-		tags: ['autohotkey', 'sublime-text'],
-		github: 'https://github.com/aviaryan/AutoHotkey'
-	},
-	{
-		id: 'stealFunc',
-		name: 'Steal Func',
-		date: '2014',
-		desc: ['Library to extract the minimum code needed from an external library OR say it strips out unused code.'],
-		tags: ['autohotkey', 'regex', 'scripting'],
-		weight: 2,
-		github: 'https://github.com/aviaryan/autohotkey-scripts/blob/master/Tools/stealFuncfromLib.ahk'
-	},
-	{
-		id: 'nologin',
-		name: 'Awesome No Login Web Apps',
-		date: '2016-17',
-		desc: ['Curated list of awesome web apps that work without requesting you to create an account.'],
-		tags: ['awesome-list'],
-		github: 'https://github.com/aviaryan/awesome-no-login-web-apps'
-	},
-	{
-		id: 'kissdown',
-		name: 'KissAnime Batch Downloader',
-		date: '2017',
-		desc: ['Scripts that fetch download links of any series on KissAnime, KissAsian or KissCartoon and gives them to you in the form of a list.'],
-		tags: ['javascript', 'hacking'],
-		github: 'https://github.com/aviaryan/Kissanime-Batch-Downloader'
-	},
-	{
-		id: 'udportfolio',
-		name: 'Simple Portfolio',
-		date: '2017',
+  {
+		id: 'hexo-theme-symphony',
+		name: 'Hexo Theme Symphony',
+		desc: [
+			'A neat Hexo theme symphony without any unnecessary animations',
+			'The theme used by blog.snowme34.com',
+			'(Hexo is a Node.js-powered blog framework)'
+		],
+		date: '2018/10',
+		github: 'https://github.com/snowme34/hexo-theme-symphony',
 		weight: -1,
-		desc: ['A simple, lightweight, responsive portfolio design.'],
-		tags: ['website'],
-		github: 'https://github.com/aviaryan/ud-portfolio',
-		websites: ['http://aviaryan.in/ud-portfolio/']
+		tags: [
+	   'Node.js', 'JavaScript', 'CSS', 'Blog'
+		]
 	},
-	{
-		id: 'last2imgur',
-		name: 'Last 2 Imgur',
-		date: '2017',
-		desc: ['Alfred workflow to upload the last screenshot taken to Imgur + (delete and minify image)'],
-		tags: ['alfred', 'scripting'],
-		github: 'https://github.com/aviaryan/alfred-last2imgur'
-	},
-	{
-		id: 'abc',
-		name: 'ABC',
-		date: '2017-present',
-		desc: ['Commandline-line app in Go to interact with appbase.io and import data from various databases to ElasticSearch.',
-			'Source databases like Postgres, Mongo, MySQL, MSSQL etc are supported.'],
-		tags: ['golang', 'cli'],
-		weight: 1,
-		github: 'https://github.com/appbaseio/abc'
-	},
-	{
-		id: 'catalog',
-		name: 'Anime Catalog',
-		date: '2017',
-		desc: ['Full stack app that allows users to login and list down favorite anime series.'],
-		tags: ['webapp', 'backend', 'flask', 'python'],
-		github: 'https://github.com/aviaryan/ud-catalog'
-	},
-	{
-		id: 'website',
-		name: 'My Blog/Website',
-		date: '2013-16',
-		desc: ['Blog + website written in Jekyll.'],
-		tags: ['website', 'blog', 'jekyll'],
-		github: 'https://github.com/aviaryan/aviaryan.github.com',
-		websites: ['http://aviaryan.github.io']
-	},
-	{
-		id: 'dls',
-		name: 'DLS',
-		date: '2016',
+  {
+		id: 'cuddly-datastructures-and-algorithms',
+		name: 'Cuddly Data Structures and Algorithms',
 		desc: [
-			'Direct Link Service. A pastebin for text and uploading files where you can choose a custom link.',
-			'Also file and text will be accessible/downloadable from easy to remember direct links.'],
-		tags: ['flask', 'backend', 'python'],
-		github: 'https://github.com/aviaryan/dls',
-		websites: ['http://dls.aviaryan.in/']
-	},
-	{
-		id: 'orga-server',
-		name: 'Open Event Server',
-		date: '2016-17',
-		desc: ['API server to enable organizers to manage events from concerts to conferences and meet-ups. Part of the open event ecosystem.',
-			'Deployable on Digital Ocean, Google Cloud, EC 2 and Heroku.'],
-		tags: ['flask', 'backend', 'python'],
-		github: 'https://github.com/fossasia/open-event-orga-server',
-		weight: 1,
-		websites: ['https://open-event-dev.herokuapp.com', 'https://eventyay.com']
-	},
-	{
-		id: 'competitive',
-		name: 'Competitive Codes',
-		date: '2015-present',
-		desc: ['This project contains all the codes I made in my journey of competitive programming.',
-			"I prefer to write in CPP. Have lost interest in competitive programming recently, more aligned towards development."],
-		tags: ['algorithm', 'data-structures', 'cpp'],
-		github: 'https://github.com/aviaryan/competitive'
-	},
-	{
-		id: 'sub-notebook',
-		name: 'Sublime Notebook',
-		date: '2017-present',
-		desc: [
-			'Sublime Notebook is an attempt to use Sublime Text as a complete note taking application.',
-			'It comes with all sorts of cool features like note searching, hierarchical organization, password encryption, cloud sync and git backups.'
+			'Some naive and cuddly data structures and algorithms.',
+			'Write for fun only.'
 		],
-		tags: ['sublime-text', 'python'],
-		github: 'https://github.com/aviaryan/SublimeNotebook',
-		websites: ['https://medium.com/aviaryan/sublime-notebook-an-attempt-to-use-sublime-text-as-my-note-taking-application-b8d846c47905#.hy8alq2ip']
+		date: '2018/10-present', // 2345-present
+		github: 'https://github.com/snowme34/cuddly-datastructures-and-algorithms',
+		weight: -3,
+		tags: [
+	   'Data Structures', 'Algorithms', 'C++'
+		]
 	},
-	{
-		id: 'lcpscancode',
-		name: 'CC Licenses Parser for Scancode',
-		date: '2017',
-		desc: ['This script scans Creative Commons License pages and generate scancode data files.'],
-		tags: ['scripting', 'python', 'regex'],
+  {
+		id: 'cuddly-programs',
+		name: 'Cuddly Programs',
+		desc: [
+			'Some one-file program written as either practice or short script or for fun',
+			'Majority of code written when first studying programming'
+		],
+		date: '2017/12-present', // 2345-present
+		github: 'https://github.com/snowme34/cuddly-programs',
+		weight: -3,
+		tags: [
+	   'C++', 'Python', 'Windows Batch', 'Bash'
+		]
+	},
+  {
+		id: 'a-hackathon-2019',
+		name: 'A Hackathon 2019',
+		desc: [
+			'A hackathon project, in Python Flask and ReactJS.',
+			'A platform for pairing up (recommendation system) users based on skills',
+			'Led 4-people team, with 3 first-time participants'
+		],
+		date: '2019/04',
+		weight: 0,
+		tags: [
+	   'CS For All', 'Hackathon', 'Python', 'Flask', 'React', 'All-inclusive CS', 'Database Design'
+		]
+	},
+  {
+		id: 'everyday-writing',
+		name: 'Everyday Writing',
+		desc: [
+			'The codes I write when studying'
+		],
+		date: '2017-present',
+		github: 'https://github.com/snowme34/coursera-machine-learning-hw',
+		weight: -3,
+		tags: [
+	   'Beginner', 'C++', 'Learning', 'Java', 'Golang', 'Python', 'Naive', 'Practice'
+		]
+	},
+  {
+		id: 'coursera-machine-learning-hw',
+		name: 'Coursera Machine Learning HW',
+		desc: [
+			'The MATLAB code for Coursera ml course hw'
+		],
+		date: '2016',
+		github: 'https://github.com/snowme34/coursera-machine-learning-hw',
+		weight: 0,
+		tags: [
+	   'Machine Learning', 'Coursera', 'MATLAB'
+		]
+	},
+  {
+		id: 'cppstd-rbtree-root-header-relationship',
+		name: 'Cppstd RBtree Root Header Relationship',
+		desc: [
+			'A short proof that in the red black tree in gnu g++ std, the header is the parent of root, and the root is the parent of header'
+		],
+		date: '2019/04',
+		github: 'https://github.com/snowme34/cppstd-rbtree-root-header-relationship',
+		weight: 0,
+		tags: [
+	   'C++ STD', 'C++', 'Learning', 'Fun', 'GNU', 'Algorithm', 'Data Structure'
+		]
+	},
+  {
+		id: 'ultimate-fibonacci-number-calculator',
+		name: 'Ultimate Fibonacci Number Calculator',
+		desc: [
+			'Use polynomial, dynamic programming and big-number-addition strategies to calculate nth Fibonacci number',
+			'May be improved using matrix mul'
+		],
+		date: '2018/10',
+		github: 'https://github.com/snowme34/ultimate-fibonacci-number-calculator',
+		weight: -1,
+		tags: [
+	   'C++', 'Algorithm'
+		]
+	},
+  {
+		id: 'blackjack-cli',
+		name: 'blackjack cli',
+		desc: [
+			'A single-player simplified Blackjack game running in terminal'
+		],
+		date: '2018/10',
+		github: 'https://github.com/snowme34/blackjack-cli',
+		weight: 0,
+		tags: [
+	   'C++', 'OOP', 'Terminal', 'Game'
+		]
+	},
+  {
+		id: 'ownticket',
+		name: 'OwnTicket',
+		desc: [
+			'A ticket system based on face recognition and blockchain technology',
+			'White-paper only'
+		],
+		date: '2018/04',
+		github: 'https://github.com/snowme34/Ownticket',
+		weight: -10,
+		tags: [
+	   'Blockchain', 'OpenCV', 'White Paper', 'Tensorflow', 'Facial Recognition'
+		]
+	},
+  {
+		id: 'the-art-of-command-line',
+		name: 'The Art of Command Line',
+		desc: [
+			'Translation for this 60k+ starred repo',
+			'First contribution to open source'
+		],
+		date: '2017/11',
+		github: 'https://github.com/jlevy/the-art-of-command-line',
 		weight: -2,
-		github: 'https://github.com/aviaryan/cc-licenses-parser-scancode'
-	},
-	{
-		id: 'lc3-sublime',
-		name: 'LC3 Sublime',
-		date: '2015',
-		desc: ['A Package to provide syntax highlighting for LC3 .asm files in Sublime Text.',
-			'"Goto Symbol" feature in Sublime Text corresponds to labels in the assembly code.'],
-		tags: ['sublime-text', 'regex'],
-		github: 'https://github.com/aviaryan/lc3-sublime'
-	},
-	{
-		id: 'close-folder',
-		name: 'Close Folder',
-		date: '2015',
-		desc: ['A simple Sublime Text plugin to close all open files of current directory or all open files inside some directory.',
-			'Supports Sublime Text 2 and 3. Available on Package Control as CloseFolder'],
-		tags: ['sublime-text'],
-		github: 'https://github.com/aviaryan/CloseFolder'
-	},
-	{
-		id: 'quotesOnTheGo',
-		name: 'Quotes On The Go',
-		date: '2017',
-		desc: ['Command line application that shows you a random quote using forismatic.com API.'],
-		tags: ['golang', 'cli'],
-		weight: -2,
-		github: 'https://github.com/aviaryan/quotesOnTheGo'
-	},
-	{
-		id: 'csbed',
-		name: 'Counter Strike Bot Editor',
-		date: '2013',
-		desc: ['Counter Strike 1.6/CZ complete bot profiles editor with a GUI. Last updated on Jan 2013.'],
-		tags: ['autohotkey', 'gui'],
-		github: 'https://github.com/aviaryan/Counter-Strike-Bot-Editor'
-	},
-	{
-		id: 'series-renamer',
-		name: 'Series Renamer',
-		date: '2015',
-		desc: ['Python script that connects to thetvdb.com and renames your TV series in any fashion you want.'],
-		tags: ['python', 'cli', 'regex', 'pip'],
-		github: 'https://github.com/aviaryan/series-renamer',
-		weight: 1,
-		websites: ['http://aviaryan.github.io/series-renamer/']
-	},
-	{
-		id: 'gmd',
-		name: 'Github Markdown Preview',
-		date: '2016',
-		desc: ['A simple webapp to preview markdown text (GFM) using Github API. Also allows you to print markdown document.'],
-		tags: ['webapp'],
-		github: 'https://github.com/aviaryan/javascripts/tree/gh-pages/github.md',
-		websites: ['http://gmd.aavi.me/']
-	},
-	{
-		id: 'gig',
-		name: 'Gradient Image generator',
-		date: '2015',
-		desc: ['A tool to convert CSS gradients to image files. Height and width of the image can be set by the user.'],
-		tags: ['webapp'],
-		github: 'https://github.com/aviaryan/javascripts#gradient-image-generator-gig',
-		websites: ['http://gig.aavi.me/']
-	},
-	{
-		id: 'puzzle8',
-		name: 'Puzzle-8',
-		date: '2016',
-		desc: ['8-Puzzle game in Android. Includes automatic puzzle solver.'],
-		tags: ['android', 'java', 'game'],
-		github: 'https://github.com/aviaryan/CSwA_puzzle8'
-	},
-	{
-		id: 'nkm-server',
-		name: 'NowKnowMore server',
-		date: '2016',
-		desc: [
-			'Now Know More is a news aggregation service that allows you to follow any topic of your interest and get latest news on the same.',
-			'The topic can by anything from "Good Recipes" to "Stock Market" to "Fitness Tips".',
-			'The whole thing was built in 8 hrs with swagger API documentation and integrated unit testing.'],
-		tags: ['backend', 'flask', 'python'],
-		github: 'https://github.com/aviaryan/nkm-server'
-	},
-	{
-		id: 'dockerfiles',
-		name: 'Dockerfiles',
-		date: '2016',
-		desc: ['Free, useful Docker images built by me.'],
-		tags: ['docker'],
-		github: 'https://github.com/aviaryan/Dockerfiles'
-	},
-	{
-		id: 'emojiui',
-		name: 'EmojiUI',
-		date: '2016',
-		desc: ['Offline and cross-platform emoji finding tool using Electron.'],
-		tags: ['npm', 'javascript', 'electron'],
-		github: 'https://github.com/aviaryan/emojiui'
-	},
-	{
-		id: 'lxiym-pdf',
-		name: 'Learn X in Y minutes - PDF',
-		date: '2015-16',
-		desc: ['Small code-oriented PDFs to master any programming language.'],
-		tags: ['python', 'scripting'],
-		github: 'https://github.com/aviaryan/learnxinyminutes-pdf'
-	},
-	{
-		id: 'ots-2016-cal',
-		name: 'OTS 2016 Google Calendar',
-		date: '2016',
-		desc: ['A quick and dirty little thing that takes OTS 2016 schedule (json) and creates Google Calendars (and iCalendars .ics) out of it.'],
-		tags: ['golang', 'scripting', 'ci'],
-		github: 'https://github.com/aviaryan/opentechsummit-2016-calendar'
-	},
-	{
-		id: 'ahk-ci',
-		name: 'AutoHotkey CI',
-		date: '2016',
-		desc: ['Example project to demonstrate how to use AppVeyor to set up continuous testing for an AutoHotkey project.'],
-		tags: ['autohotkey', 'scripting', 'ci'],
-		github: 'https://github.com/aviaryan/Ahk-CI-Example',
-		websites: ['https://autohotkey.com/boards/viewtopic.php?f=6&t=16168']
-	},
-	{
-		id: 'collegare-server',
-		name: 'Collegare Server',
-		date: '2015',
-		desc: ['Unofficial college\'s social networking platform. I worked on the backend.'],
-		tags: ['php', 'backend'],
-		github: 'https://github.com/aviaryan/collegare-server'
-	},
-	{
-		id: 'pythons',
-		name: 'Pythons',
-		date: '2016',
-		desc: ['Little python scripts I made to make my life easier. Scripts like Twitter follow bot, emoji searching tool, encrypt/decrypt tool and so on.'],
-		tags: ['python', 'scripting'],
-		github: 'https://github.com/aviaryan/pythons'
-	},
-	{
-		id: 'ahks',
-		name: 'AutoHotkey scripts',
-		date: '2013-16',
-		desc: ['A collection of Autohotkey scripts and libraries authored by me'],
-		tags: ['autohotkey', 'scripting'],
-		weight: 1,
-		github: 'https://github.com/aviaryan/autohotkey-scripts'
-	},
-	{
-		id: 'gcide',
-		name: 'GCIDE JSON',
-		date: '2015-16',
-		desc: ['GCIDE dictionary in json format. Also includes a command-line dictionary application.'],
-		tags: ['python', 'scripting', 'scraping'],
-		github: 'https://github.com/aviaryan/gcide-dictionary-json'
-	},
-	{
-		id: 'bootstrap-chm',
-		name: 'Bootstrap CHM',
-		date: '2015-16',
-		desc: ['Bootstrap documentation in chm, complete with Index and TOC. Especially suited for Windows based developers.'],
-		tags: ['python', 'scripting', 'scraping'],
-		github: 'https://github.com/aviaryan/bootstrap-chm'
-	},
-	{
-		id: 'algorithms-course',
-		name: 'Algorithms 101',
-		date: '2015-16',
-		desc: ['Algorithm implementations from my 4th semester Algorithms 101 course.'],
-		tags: ['cpp', 'algorithm', 'data-structures'],
-		github: 'https://github.com/aviaryan/algorithms-course'
-	},
-	{
-		id: 'brain-games',
-		name: 'Brain Games',
-		date: '2015',
-		desc: [
-			'Games to boost one\'s brain, written in Python using Pyglet. Includes 6 different exciting games.',
-			'Pre-compiled binaries available for Windows.'
-		],
-		weight: 2,
-		tags: ['python', 'game', 'gui'],
-		github: 'https://github.com/aviaryan/BrainGames'
-	},
-	{
-		id: 'ahk-best',
-		name: 'Ahk Best Practises',
-		date: '2016',
-		desc: [
-			'Good practices in AutoHotkey coding that will help avoid bugs and make your code more readable'
-		],
-		tags: ['autohotkey'],
-		github: 'https://github.com/aviaryan/Ahk-Best-Practices'
-	},
-	{
-		id: 'pop-movies',
-		name: 'Popular Movies',
-		date: '2016',
-		desc: ['An app to showcase trending and popular movies.'],
-		tags: ['android', 'java'],
-		github: 'https://github.com/aviaryan/PopularMovies'
-	},
-	{
-		id: 'ini-translator',
-		name: 'INI Translator',
-		date: '2013',
-		desc: [
-			'A program to translate ini-formatted files (key=value) in one go. Supports all popular formats.',
-			'Uses scraping for Google Translate to achieve the results.'
-		],
-		tags: ['autohotkey', 'scripting', 'scraping'],
-		github: 'https://github.com/aviaryan/initranslator'
-	},
-	{
-		id: 'shape-recog',
-		name: 'Shape Recognition',
-		date: '2015',
-		desc: [
-			'Shape Recog is a figure analyzer and synthesizer. It corrects the figure you have drawn to fit a known geometrical representation.',
-			'The developed version only checks if it\'s square, rectangle, triangle, circle, line or INVALID.'
-		],
-		tags: ['autohotkey', 'maths', 'gui'],
-		github: 'https://github.com/aviaryan/shape-recog'
-	},
-	{
-		id: 'highlighter-ahk',
-		name: 'AutoHotkey Syntax Highlighter',
-		date: '2014',
-		desc: ['AutoHotkey Syntax Highlighter Brush with Zenburn and GitHub themes'],
-		tags: ['javascript', 'regex'],
-		github: 'https://github.com/aviaryan/highlighter-ahk-zenburn'
-	},
-	{
-		id: 'light-ahk',
-		name: 'Light AHK',
-		date: '2014',
-		desc: ['Really lightweight syntax highlighting for AutoHotkey. Only 6.4kb non-gzipped overhead.',
-			'This includes syntax highlighting library + css styles.'],
-		tags: ['javascript', 'regex'],
-		github: 'https://github.com/aviaryan/lightAHK'
-	},
-	{
-		id: 'ini-hl',
-		name: 'INI Highlighter',
-		date: '2013-14',
-		desc: ['Syntax Highlighter Brush for INI format'],
-		tags: ['javascript', 'regex'],
-		github: 'https://github.com/aviaryan/lightAHK'
-	},
-	{
-		id: 'wtfeed',
-		name: 'What the Feed',
-		date: '2016',
-		desc: [
-			'What The Feed is a social media aggregration platform that helps you follow related social media accounts at once.',
-			'Suppose you are interested in some topic, say "Indian Finance", WTF will automatically find the leading social ' +
-				' media accounts for that topic, follow their posts and provide you with an aggregrated feed.',
-			'Twitter, Instagram and Tumblr are supported at the moment.'
-		],
-		tags: ['python', 'backend', 'django'],
-		github: 'https://github.com/iiitv/hackathon-fullstack-server'
-	},
-	{
-		id: 'portfolio',
-		name: 'Portfolio',
-		date: '2017-present',
-		desc: [
-			'My open source projects portfolio. Built using React, React Router and Redux.',
-			'My first open source React project.'
-		],
-		tags: ['webapp', 'react', 'javascript'],
-		github: 'https://github.com/aviaryan/work',
-		websites: ['http://aviaryan.in/work']
-	},
-	{
-		id: 'alfred-clc',
-		name: 'Alfred CLC',
-		date: '2017',
-		desc: [
-			'Powerful calculator for Alfred. Supports advanced expressions and unit conversions.'
-		],
-		tags: ['alfred', 'scripting'],
-		github: 'https://github.com/aviaryan/alfred-clc',
-		websites: ['https://www.alfredforum.com/topic/10652-clc-powerful-calculator-for-alfred/']
-	},
-	{
-		id: 'alfred-google-search',
-		name: 'Alfred Google Search',
-		date: '2017',
-		desc: [
-			'Alfred workflow to do inline google searches (open URL or copy to clipboard).'
-		],
-		tags: ['alfred', 'scripting'],
-		github: 'https://github.com/aviaryan/alfred-google-search',
-		websites: ['https://www.alfredforum.com/topic/10674-google-inline-search-open-url-copy-to-clipboard/']
-	},
-	{
-		id: 'gsearch',
-		name: 'Google Search API',
-		date: '2017',
-		weight: 1,
-		desc: [
-			'Google Search unofficial API for Python with no external dependencies.',
-			'Full Unicode support and works with Python 2 & 3.'
-		],
-		tags: ['python', 'scraping', 'pip'],
-		github: 'https://github.com/aviaryan/python-gsearch',
-	},
-	{
-		id: 'vscodenotebook',
-		name: 'VSCode Notebook',
-		date: '2018-present',
-		weight: 1,
-		desc: [
-			'VSCode Notebook is an attempt to use VSCode as a complete note taking application.',
-			'It comes with all sorts of cool features like note searching, hierarchical organization, password encryption, cloud sync and git backups.'
-		],
-		tags: ['python', 'vscode'],
-		github: 'https://github.com/aviaryan/VSCodeNotebook',
-	},
-	{
-		id: 'chattt',
-		name: 'Chattt',
-		date: '2018',
-		desc: [
-			'Chat without leaving your terminal'
-		],
-		tags: ['javascript', 'npm', 'cli'],
-		github: 'https://github.com/aviaryan/chattt',
+		websites: ['https://github.com/jlevy/the-art-of-command-line/commit/29f0cbcb48fed8001d8c928e640d0897766277c7'],
+		tags: [
+	   'CLI', 'Open Source', 'Community', 'Translation'
+		]
 	}
 ];
 
