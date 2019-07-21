@@ -15,9 +15,8 @@ install:
   #- rm -rf ./node_modules
   - yarn install
 script:
-  - yarn build
   - rm -rf public/dist
-  - mv dist/ public/dist/
+  - yarn build
 deploy:
   local_dir: public
   provider: pages

@@ -32,8 +32,8 @@ module.exports = {
 		}
 	},
 	output: {
-		path: __dirname + '/dist',
-		publicPath: '/dist/',
+		path: __dirname + '/public/dist',
+		publicPath: '/public/dist/',
 		filename: 'bundle.js'
 	},
 	node: { Buffer: false },  // https://github.com/btmills/geopattern/issues/32
