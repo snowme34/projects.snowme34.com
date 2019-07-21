@@ -1,7 +1,7 @@
 // registers SW
 export default function registerSW() {
 	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register(prefix + '/sw.js', { scope: prefix + '/' })
+		navigator.serviceWorker.register('/sw.js', { scope: '/' })
 			.then(function (registration) {
 				console.log('Service Worker Registered');
 			});
