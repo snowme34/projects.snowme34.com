@@ -12,7 +12,7 @@ module.exports = {
 			exclude: /node_modules/,
 			loader: 'babel-loader',
 			query: {
-				presets: ['es2015', 'react']
+				presets: ['env', 'react']
 			}
 		}, {
 			test: /\.css$/,
@@ -29,7 +29,15 @@ module.exports = {
 					}
 				},
 				{
-					loader: 'postcss-loader'
+					loader: 'postcss-loader',
+					options: {
+						ident: 'postcss',
+						plugins: [
+							require('autoprefixer')({
+								'browsers': ['> 1%', 'last 2 versions']
+							}),
+						]
+					}
 				}
 			]
 		}]
