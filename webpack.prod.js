@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
 	entry: {
@@ -16,10 +16,22 @@ module.exports = {
 			}
 		}, {
 			test: /\.css$/,
-			use: [{
-				loader: 'css-loader',
-				options: { importLoaders: 1, modules: true, localIdentName: '[local]-[hash:base64:5]' },
-			}],
+			use: [
+				{
+					loader: MiniCssExtractPlugin.loader
+				},
+				{
+					loader: "css-loader",
+					options: {
+						sourceMap: true,
+						modules: true,
+						localIdentName: "[local]___[hash:base64:5]"
+					}
+				},
+				{
+					loader: 'postcss-loader'
+				}
+			]
 		}]
 	},
 	resolve: {
@@ -36,15 +48,7 @@ module.exports = {
 	},
 	node: { Buffer: false },  // https://github.com/btmills/geopattern/issues/32
 	plugins: [
-		new ExtractTextPlugin('styles.css'),
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.optimize\.css$/g,
-      cssProcessor: require('cssnano'),
-      cssProcessorPluginOptions: {
-        preset: ['default', { discardComments: { removeAll: true } }],
-      },
-      canPrint: true
-    })
+		new MiniCssExtractPlugin(),
 		// vendor: https://webpack.github.io/docs/code-splitting.html#split-app-and-vendor-code
 		// new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
 		// no need for vendor optimization as it is very small
