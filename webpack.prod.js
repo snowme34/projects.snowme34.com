@@ -7,7 +7,7 @@ module.exports = {
 		// vendor: ['react', 'react-dom', 'geopattern', 'react-router-dom', 'redux']
 	},
 	module: {
-		loaders: [{
+		rules: [{
 			test: /\.jsx?$/,
 			exclude: /node_modules/,
 			loader: 'babel-loader',
