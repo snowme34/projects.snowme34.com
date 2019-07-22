@@ -33,7 +33,7 @@ module.exports = {
 						ident: 'postcss',
 						plugins: [
 							require('autoprefixer')({
-								'browsers': ['> 1%', 'last 2 versions']
+								'browserslist': ['> 1%', 'last 2 versions']
 							}),
 						]
 					}
