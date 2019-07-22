@@ -6,13 +6,13 @@ A project page.
 
 ## Changes From Fork
 
-1. use CI/CD, not script, to deploy (resulting in clean project structure and deployment)
+1. use CI/CD, not script, to deploy (resulting in clean project structure and easier deployment)
 2. support uppercase tags
 3. support longer description and more tags for each project
 4. improve responsive project display
 5. fix hard-coded directory path
-6. add regex escape for search (did not support c++)
-7. add time to details
+6. add regex escape for search (did not support strings like "c++")
+7. display time to details
 8. remove loading vendor.bundle.js
 9. add favicon
 10. add more colors
@@ -21,6 +21,8 @@ A project page.
 -----------------------------------
 
 **Below is the forked README (from original author)**:
+
+-----------------------------------
 
 [aviaryan.in/work/](https://aviaryan.in/work/)
 
