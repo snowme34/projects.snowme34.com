@@ -13,7 +13,6 @@ before_install:
   - yarn --version
 install:
   #- rm -rf ./node_modules
-  - yarn generate-lock-entry
   - yarn install
 script:
   - rm -rf public/dist

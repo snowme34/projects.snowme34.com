@@ -55,7 +55,9 @@ module.exports = {
 	},
 	node: { Buffer: false },  // https://github.com/btmills/geopattern/issues/32
 	plugins: [
-		new MiniCssExtractPlugin(),
+		new MiniCssExtractPlugin({
+			filename: 'styles.css'
+		}),
 		// vendor: https://webpack.github.io/docs/code-splitting.html#split-app-and-vendor-code
 		// new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
 		// no need for vendor optimization as it is very small
