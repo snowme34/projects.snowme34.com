@@ -225,7 +225,7 @@ let projects = [
 		github: 'https://github.com/snowme34/cppstd-rbtree-root-header-relationship',
 		weight: -1,
 		tags: [
-	   'C++STD', 'C++', 'Learning', 'Fun', 'GNU', 'Algorithm', 'Data Structure'
+	   'C++STD', 'C++', 'Learning', 'Fun', 'GNU', 'Algorithms', 'Data Structure'
 		]
 	},
   {
@@ -239,7 +239,7 @@ let projects = [
 		github: 'https://github.com/snowme34/ultimate-fibonacci-number-calculator',
 		weight: -1,
 		tags: [
-	   'C++', 'Algorithm'
+	   'C++', 'Algorithms'
 		]
 	},
   {

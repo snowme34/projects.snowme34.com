@@ -16,7 +16,7 @@ A project page.
 8. remove loading vendor.bundle.js
 9. add favicon
 10. add more colors
-11. update packages
+11. update packages (might breaking develop env)
 
 -----------------------------------
 
