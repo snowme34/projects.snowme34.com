@@ -71,7 +71,7 @@ let projects = [
 		id: 'personbest',
 		name: 'Person Best',
 		desc: [
-			'A fitness Android app, with Google API',
+			'A fitness Android app with social interaction and chatting, with Google API',
 			'Led 5 agile developers as PM. Ensured git workflow, code quality, and design patterns such as SRP, MVC',
 			'Mainly worked on Firebase integration, db design, and quality control'
 		],
@@ -88,7 +88,7 @@ let projects = [
 		desc: [
 			'An IoT based Microclimate group project',
 			'Used embedded C and Arduino for IoT device. Wrote Node.js-based backend with SOAP API to collect 100k+ data and monitor device/data health. Wrote bash script to deploy',
-			'Utilized Google charts and map APIs to visualize the data, helping students to decide which route to take to go across campus.',
+			'Utilized Google Chart and Map APIs to visualize the data, helping students to decide which route to take to go across campus.',
 			'(no public code since school project, link to presentation)'
 		],
 		date: '2019/04-2019/06',
