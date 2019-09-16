@@ -181,7 +181,8 @@ let projects = [
 		desc: [
 			'A hackathon project (unfinished), in Python Flask and ReactJS.',
 			'A platform for pairing up (recommendation system) users based on skills',
-			'Led 4-people team for an "all-inclusive" hackathon, with 3 first-time participants'
+			'Led 4-people team for an "all-inclusive" hackathon, with 3 first-time participants',
+			'Gave detailed and personalized introduction and couching to disparately represented gender in technical careers'
 		],
 		date: '2019/04',
 		weight: -2,
