@@ -1,0 +1,16 @@
+{
+	"short_name": "snowme34-project",
+	"name": "snowme34 project",
+	"icons": [
+		{
+			"src": "/favicon.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/index.html",
+	"display": "standalone",
+	"orientation": "landscape",
+	"theme_color": "#DC9FB4",
+	"background_color": "#000000"
+}
