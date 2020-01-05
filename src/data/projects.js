@@ -123,9 +123,9 @@ let projects = [
 			'A prediction task as a final project for a data mining class',
 			'Good use of Python libraries: Scikit-learn and Keras',
 			'10 is in binary',
+			'private due to school policy'
 		],
 		date: '2018/12',
-		github: 'https://github.com/snowme34/undecidable-task-data-mining-assignment-10',
 		weight: 0,
 		tags: [
 		 'Data Mining', 'Python', 'Jupyter Notebook', 'Numpy', 'Pandas', 'Keras', 'Sklearn', 'SVM',
@@ -260,11 +260,10 @@ let projects = [
 		id: 'ownticket',
 		name: 'OwnTicket',
 		desc: [
-			'A ticket system based on face recognition and blockchain technology (White-paper only)',
+			'A ticket system based on face recognition and blockchain technology (not available publicly)',
 			'Presented in Beijing'
 		],
 		date: '2018/04',
-		github: 'https://github.com/snowme34/Ownticket',
 		weight: -10,
 		tags: [
 	   'Blockchain', 'OpenCV', 'White Paper', 'Tensorflow', 'Facial Recognition'
